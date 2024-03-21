@@ -1,0 +1,7 @@
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.sidebar-toggle-button.mod-left { margin-left:40px; }
+
+/*.workspace-tab-header {margin-left: 40px; }*/
+
+/*.is-left-sidedock-open .workspace-split:first-of-type { margin-left: 40px; }*/
+
+.workspace-split.mod-horizontal.mod-left-split .workspace-tab-header-container { margin-left: 40px; }

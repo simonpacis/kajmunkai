@@ -1,0 +1,21 @@
+{
+  "vimMode": true,
+  "showLineNumber": true,
+  "promptDelete": false,
+  "spellcheckDictionary": [
+    "nagid",
+    "Vorlage",
+    "Vaticanus"
+  ],
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showInlineTitle": false,
+  "attachmentFolderPath": "Year 3/Semester 2/Prophets and Prophecy/Assessments/Annotated Bibliography/Literature",
+  "showUnsupportedFiles": true
+}

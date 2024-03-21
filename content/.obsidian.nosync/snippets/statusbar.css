@@ -1,0 +1,4 @@
+.status-bar-item.plugin-backlink, .status-bar-item.plugin-word-count, .status-bar-item.plugin-editor-status, .status-bar-item.plugin-obsidian-vimrc-support, .status-bar-item.plugin-flashcards-obsidian, .status-bar-item.plugin-chatgpt-md {
+display: none;
+}
+
