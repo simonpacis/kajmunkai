@@ -17,7 +17,7 @@ Here is an outline of the steps we will be taking:
 3. Fine-tune LLaMa 2
 	1. This is a two-step process. First, we will fine-tune it using (Q)LoRA and PEFT. Both of these approaches emphasize efficiency in fine-tuning, and may not necessarily deliver the best results. A good starting point.
 		- We will run benchmarks here.
-	2. Subsequently, we will fine-tune using DPO. DPO, or Decision Process Optimization, should specifically help the model in its ability to generate more coherent and contextually appropriate responses.
+	2. Subsequently, we will fine-tune using DPO. DPO, or [Direct Preference Optimization](https://huggingface.co/docs/trl/main/en/dpo_trainer), should specifically help the model in its ability to generate more coherent and contextually appropriate responses.
 		- We will again run benchmarks here.
 1. Profit!
 	- We should be able to chat with the model in its final form here. Running benchmarks on it will give us an idea of improvement of the model, and whether further fine-tuning is required as pertains to conversing in Danish.

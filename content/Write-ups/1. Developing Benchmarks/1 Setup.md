@@ -8,13 +8,21 @@ In defining benchmarks, we need to specify what it is we are looking to improve 
 What we are looking for in terms of improvement here:
 - Model to become conversationally fluent in Danish.
 
+We need some metrics for comparison. I do not assume that there will be any spelling errors, as LLaMa 2 is already trained on some Danish data and has an inherent understanding of the language. 
+
+
+
 The best type of benchmarks for us would then be:
-1. Language proficiency tests, focusing on Danish vocabulary, grammar, and conversational skills.
-2. And perhaps also an analysis of the model's ability to handle Danish-specific idiomatic expressions, colloquialisms, and cultural references.
-3. Comparison against baseline performance metrics before and after fine-tuning with Danish datasets.
-4. Human evaluation of conversational fluency and accuracy in Danish, incorporating diverse and contextually rich dialogue scenarios.
-5. Quantitative metrics on response accuracy, coherence, and context relevance in Danish conversations.
+1. Language proficiency tests, focusing on Danish conversational skills.
+	1. With quantitative metrics on context relevance.
+2. Comparison against baseline performance metrics before and after fine-tuning with Danish datasets.
+3. Human evaluation of conversational fluency and accuracy in Danish, incorporating diverse and contextually rich dialogue scenarios.
+4. Quantitative metrics on response accuracy, coherence, and context relevance in Danish conversations.
 	- <small>It is unlikely that we will see any improvement in terms of cultural awareness, since the dataset will be translated from English and therefore not include specifically Danish cultural references. It will, however, be relevant to test for anyway, if for no other reason than for us to be aware of the models limitations.</small>
+
+We can rule some of these out, as the problems have already been solved previously in the process.
+
+Point 1
 
 These can all be grouped together into the following two categories:
 
@@ -23,6 +31,7 @@ These can all be grouped together into the following two categories:
 - Evaluation and metrics
 	- Benchmark types 3-5.
 
+## 
 
 
 
