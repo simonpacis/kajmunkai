@@ -1,5 +1,5 @@
 ---
-title: Setup
+title: 1. Planning 
 ---
 To be able to communicate satisfactorily with LLaMa 2 in Danish, we need to train it to be conversational in Danish. While LLaMa 2 and other such models have been trained on Danish data, they have not been trained to be conversational in it.
 

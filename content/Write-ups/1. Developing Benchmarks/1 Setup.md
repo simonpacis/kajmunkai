@@ -2,7 +2,7 @@
 title: Setup
 draft: "true"
 ---
-In defining benchmarks, we need to specify what it is we are looking to improve by way of fine-tuning. We need different benchmarks for different stages of the project. For phase 1, that is [[Write-ups/2. LLaMa 2 to Danish/1 Setup|Fine-tuning LLaMa 2 to be conversational in Danish]], we need one set of benchmarks, and for phase 2 (which will probably be further divided at a later point) we need a different set of benchmarks.
+In defining benchmarks, we need to specify what it is we are looking to improve by way of fine-tuning. We need different benchmarks for different stages of the project. For phase 1, that is [[1 Planning|Fine-tuning LLaMa 2 to be conversational in Danish]], we need one set of benchmarks, and for phase 2 (which will probably be further divided at a later point) we need a different set of benchmarks.
 
 # Phase 1 Benchmarks
 What we are looking for in terms of improvement here:
