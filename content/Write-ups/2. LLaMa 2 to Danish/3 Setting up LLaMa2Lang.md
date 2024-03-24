@@ -96,4 +96,9 @@ I am wondering whether we need to actually quantize the model here. We've got pl
 python translate.py madlad --model_size 7b da ./output_da --batch_size 5 --max_length 512
 ```
 
-And success! The translation begins, with an ETA of about 5 hours.
+And success! The translation begins, with an ETA of about 26 hours. That seems a bit long for an L40. I wonder if we could increase the `batch_size` to something like 32. And then, let's add in some checkpoint saving, in case the script crashes, so we don't have to start over.
+
+```
+python translate.py madlad --model_size 7b da ./output_da --batch_size 32 --checkpoint_n 400 --max_length 512
+```
+
