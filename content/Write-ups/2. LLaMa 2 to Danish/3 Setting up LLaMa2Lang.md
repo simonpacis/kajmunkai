@@ -140,3 +140,4 @@ Hmm. Batch size of 20 might have been too high. Let's try 10.
 python translate.py madlad --model_size 7b da ./output_da --batch_size 20 --checkpoint_n 400 --max_length 512
 ```
 
+ETA of 14 hours. That's better. Let's just let it finish.
