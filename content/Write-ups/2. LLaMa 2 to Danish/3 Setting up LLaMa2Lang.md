@@ -118,3 +118,14 @@ And success! The translation begins, with an ETA of about 26 hours. That seems a
 python translate.py madlad --model_size 7b da ./output_da --batch_size 32 --checkpoint_n 400 --max_length 512
 ```
 
+Oh...
+
+```
+Exception: Checkpoint N must be a multiple of batch size!
+```
+
+Let's try again then, with a batch_size of 40.
+
+```
+python translate.py madlad --model_size 7b da ./output_da --batch_size 40 --checkpoint_n 400 --max_length 512
+```
