@@ -115,7 +115,7 @@ python translate.py madlad --model_size 7b da ./output_da --batch_size 5 --max_l
 And success! The translation begins, with an ETA of about 26 hours. That seems a bit long for an L40. I wonder if we could increase the `batch_size` to something like 32. And then, let's add in some checkpoint saving, in case the script crashes, so we don't have to start over.
 
 ```
-python translate.py madlad --model_size 7b da ./output_da --batch_size 32 --checkpoint_n 400 --max_length 512
+python translate.py madlad --model_size 7b da ./output_da --batch_size 12 --checkpoint_n 400 --max_length 512
 ```
 
 Oh...
@@ -124,8 +124,19 @@ Oh...
 Exception: Checkpoint N must be a multiple of batch size!
 ```
 
-Let's try again then, with a batch_size of 40.
+Let's try again then, with a batch_size of 20.
 
 ```
-python translate.py madlad --model_size 7b da ./output_da --batch_size 40 --checkpoint_n 400 --max_length 512
+python translate.py madlad --model_size 7b da ./output_da --batch_size 20 --checkpoint_n 400 --max_length 512
 ```
+
+```
+torch.cuda.OutOfMemoryError: CUDA out of memory.
+```
+
+Hmm. Batch size of 20 might have been too high. Let's try 10.
+
+```
+python translate.py madlad --model_size 7b da ./output_da --batch_size 20 --checkpoint_n 400 --max_length 512
+```
+
