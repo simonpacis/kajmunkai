@@ -2,7 +2,23 @@
 title: 3. Setting up LLaMa2Lang
 ---
 
-Let us first `cd` to `/tools/LLaMa2Lang`. The next step is to install requirements for python:
+First, we need to clone `LLaMa2Lang`. The home directory currently contains the following directories:
+
+```
+containers
+tools
+models
+scripts
+```
+
+Let us clone it, using git, into tools:
+
+```
+cd tools
+git clone https://github.com/UnderstandLingBV/LLaMa2lang/tree/main
+```
+
+The next step is to install requirements for python:
 
 ```
 pip install -r requirements.txt
