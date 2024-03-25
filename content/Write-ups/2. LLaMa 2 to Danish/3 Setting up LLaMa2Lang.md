@@ -1,5 +1,5 @@
 ---
-title: 3. Setting up LLaMa2Lang
+title: 3. Translating to Danish 
 ---
 
 First, we need to clone `LLaMa2Lang`. The home directory currently contains the following directories:
@@ -141,3 +141,33 @@ python translate.py madlad --model_size 7b da ./output_da --batch_size 20 --chec
 ```
 
 ETA of 14 hours. That's better. Let's just let it finish.
+
+And, 14 hours later, we end up with the following `.json`-files:
+
+```
+<snip>
+-rw-rw-r-- 1 xx@id.aau.dk xx@id.aau.dk 547933 Mar 25 02:22 upto_10000.json -rw-rw-r-- 1 xx@id.aau.dk xx@id.aau.dk 595039 Mar 25 02:30 upto_10400.json -rw-rw-r-- 1 xx@id.aau.dk xx@id.aau.dk 621759 Mar 25 02:39 upto_10800.json -rw-rw-r-- 1 xx@id.aau.dk xx@id.aau.dk 609283 Mar 25 02:48 upto_11200.json
+<snip>
+```
+
+Each of these contain a bunch of translated training data from OASST. Here are some snippets of the translated data:
+
+```
+I dette tilfælde er implementeringen af MACD crossover-strategien baseret på en almindeligt anvendt teknisk analyseindikator, som har været meget udbredt i den finansielle industri i mange år.
+```
+
+and
+
+```
+Du kommer til at have brug for:
+* 1 lb hakket kalkun
+* 1 æg
+* 1/4 kop tern løg
+* 1 fed hakket hvidløg
+* 1/4 kop tern peberfrugter (valgfrit)
+* 1 tsk salt (eller efter smag)
+* 1-2 spsk vegetabilsk olie
+* krydderier: 1 tsk tørret timian, 1 tsk tørret rosmarin
+```
+
+These look pretty good, and we can probably move on the the next stage.
