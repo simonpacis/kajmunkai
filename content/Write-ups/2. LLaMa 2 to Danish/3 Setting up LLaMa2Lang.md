@@ -142,7 +142,7 @@ python translate.py madlad --model_size 7b da ./output_da --batch_size 20 --chec
 
 ETA of 14 hours. That's better. Let's just let it finish.
 
-And, 14 hours later, we end up with the following `.json`-files:
+And, 14 hours later, we end up with a bunch `.json`-files like this:
 
 ```
 <snip>

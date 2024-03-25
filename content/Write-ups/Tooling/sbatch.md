@@ -137,3 +137,12 @@ WARNING: Skipping mount /etc/localtime [binds]: /etc/localtime doesn't exist in 
 13:4: not a valid test operator: 535.161.07
 This is a test script.
 ```
+
+# sshell
+And then we can quickly whip up an alias, so that we can run `sshell` to access a shell without GPU and with default settings.
+
+```bash
+#!/usr/bin/env bash
+
+srun --pty singularity shell --writable --fakeroot /home/xx.aau.dk/xx/containers/kajmunkai_pytorch_24.02-py3
+```
