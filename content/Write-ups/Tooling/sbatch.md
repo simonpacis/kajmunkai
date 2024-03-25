@@ -122,10 +122,16 @@ All of this allows us to simply run:
 sb python /root/scripts/python/test.py
 ```
 
+(containing 
+```python
+print('This is a test script.')
+```
+)
+
 Which results in output file `~/output/043606-2024-03-25-test.py.log`, containing first the `srun` command that was executed, then all output.
 
 ```
-srun singularity exec --writable --fakeroot /home/id.aau.dk/sklitj17/containers/kajmunk_pytorch_24.02-py3 python /root/scripts/python/test.py
+srun singularity exec --writable --fakeroot /home/id.aau.dk/xx/containers/kajmunk_pytorch_24.02-py3 python /root/scripts/python/test.py
 WARNING: Skipping mount /etc/localtime [binds]: /etc/localtime doesn't exist in container
 13:4: not a valid test operator: (
 13:4: not a valid test operator: 535.161.07
